@@ -1,0 +1,135 @@
+.single {
+  display: flex;
+  width: 100%;
+
+  .singleContainer {
+    flex: 6;
+
+    .top {
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+
+      .left {
+position: relative;
+border-radius: 10px;
+        flex: 1;
+        padding: 20px;
+    -webkit-box-shadow : 2px 4px 10px 1px rgba(0,0,0,0.47) ; 
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+      height: 100%;
+
+
+
+    .editButton {
+padding: 5px;
+position: absolute ; 
+top: 0;
+right: 0;
+height: 18px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 12px;
+font-weight: 500;
+color: #cf3c17 ;
+background-color: #cf3c1734 ;
+    border-radius: 0px 5px 0px 5px ;
+cursor: pointer;
+}
+
+
+
+.item {
+display: flex;
+gap: 18px;
+flex-direction: column;
+
+
+.pres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .itemImg {
+        width: 110px ; 
+        border-radius: 50%;
+        height: 110px;
+        object-fit: cover;
+    }
+
+    .itemTitle {
+        font-size: 26px;
+        margin-top: 15px;
+        color: #555 ;
+    }
+
+}
+
+.details {
+.detailItem  {
+margin-bottom: 10px;
+font-size: 15px;
+
+
+
+.itemKey {
+font-weight: bold;
+font-size: 15px;
+color: #1c1c30;
+margin-right: 5px;
+
+}
+
+.itemValue {
+    font-weight: 300;
+}
+
+
+
+}
+
+
+}
+
+
+
+}
+
+
+
+
+}
+
+      .right {
+        flex: 2;
+      }
+    }
+
+    .bottom{
+        padding: 20px;
+        -webkit-box-shadow : 2px 4px 10px 1px rgba(0,0,0,0.47) ; 
+        box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+        margin: 5px 20px;
+        border-radius: 10px;
+        
+        }
+        .title {
+            display: flex;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            align-items: center;
+            justify-content: space-between;
+            color: #1c1c30;
+        }
+  }
+
+
+
+
+
+ 
+}
+
+
+

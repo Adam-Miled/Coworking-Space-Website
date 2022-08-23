@@ -1,0 +1,109 @@
+.datatable {
+height: 600px;
+padding: 20px;
+border-radius: 10px;
+position: relative;
+
+.test{
+    display: flex;
+    justify-content: flex-end;
+.lead{
+
+width: fit-content;
+padding: 5px;
+border-radius: 10px;
+color: #1c1c30;
+border: 1px solid #f7cb8f;
+background-color: #f7cb8f;
+font-size: 14px;
+font-weight: 600;
+margin: 10px;
+display: flex;
+align-items: center;
+cursor: pointer;
+
+&:hover {
+    color: #1c1c30 ;
+    border: 1px solid #1c1c30;
+    background-color: white;
+}
+
+
+}
+}
+
+
+
+
+.grid {
+border-radius: 10px;
+
+}
+
+.cellwithImg {
+display: flex;
+align-items: center;
+
+
+.cellImg {
+
+    width: 32px;
+    height: 32px;
+object-fit: cover;
+    border-radius: 50%;
+
+    margin-right: 20px;
+
+}
+
+
+
+}
+
+
+.cellAction {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+
+
+.viewButton {
+    padding: 2px 5px;
+    border-radius: 5px;
+    color : #1c1c30 ; 
+border: 1px dotted #1c1c30c4;
+font-weight: 500;
+cursor: pointer;
+
+
+&:hover {
+color: white;
+background-color: #1c1c30;
+
+}
+
+
+}
+
+.deleteButton {
+    padding: 2px 5px;
+    border-radius: 5px;
+    color : #cf3c17 ; 
+border: 1px dotted #cf3c17bd;
+font-weight: 500;
+cursor: pointer;
+
+&:hover {
+    color: white;
+    background-color: #cf3c17;
+    
+    }
+
+
+}
+}
+
+}
