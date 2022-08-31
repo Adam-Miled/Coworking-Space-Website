@@ -105,3 +105,115 @@ color: #cf3c17;
 
 
 }
+
+
+.vitrineNavbar.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+width: 100%;
+height: 90px;
+background-color: transparent;
+
+box-shadow: none ;
+
+
+.left {
+
+    img {
+        height: 60px;
+    }
+}
+
+
+.right {
+
+    .buttonRed {
+        width: 130px;
+        height: 35px;
+        border: none ;
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+       
+        margin: 4px;
+        border-radius: 12px;
+        cursor: pointer;
+        background-color: #cf3c17;
+        &:hover {
+            border: 2px solid #cf3c17;
+            background-color: transparent;
+            color: #cf3c17;
+            font-weight: 500;
+          }
+
+       
+      }
+
+    .buttonBlue {
+        width: 130px;
+        height: 35px;
+        border: none ;
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+       
+        margin: 4px;
+        border-radius: 12px;
+        cursor: pointer;
+        background-color: #1c1c30;
+        &:hover {
+            border: 2px solid #1c1c30;
+            background-color: transparent;
+            color: #1c1c30;
+            font-weight: 500;
+          }
+
+       
+      }
+
+}
+
+.center{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+
+h4{
+    margin: 0px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #cf3c17;
+cursor: pointer;
+    &:hover {
+color: #1c1c30;
+background-color: rgba(240, 248, 255, 0.419);
+border-radius: 10px;
+
+    }
+    
+}
+
+h5{
+margin: 0px 20px;
+font-size: 16px;
+font-weight: 600;
+color: #1c1c30;
+
+cursor: pointer;
+    &:hover {
+color: #cf3c17;
+background-color: rgba(240, 248, 255, 0.419);
+border-radius: 10px;
+
+    }
+
+}
+
+
+}
+
+
+}

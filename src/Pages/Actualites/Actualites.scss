@@ -1,0 +1,272 @@
+.actualites {
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+
+.kbira {
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-around;
+gap: 30px;
+
+.act , .ofr , .non {
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+gap: 30px;
+
+
+
+.boxbox {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: fit-content;
+height: fit-content;
+border: 1px solid #1c1c302a;
+
+border-radius: 10px;
+
+-webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+.botPart {
+display: flex;
+flex-direction: row;
+justify-content: space-between ;
+align-items: center;
+width: 100%;
+
+.botRight {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px 20px;
+
+.botIconOne {
+width: 30px;
+color: #1c1c30;
+
+}
+
+.botIconTwo {
+    width: 20px;
+    color: #1c1c30;
+    
+    }
+
+
+
+}
+
+
+button {
+
+    border-radius: 20px;
+    height: 25px ; 
+    width: 60px;
+    color: white;
+    background-color: #1c1c30;
+    text-align: center;
+margin: 10px 20px;
+margin-bottom: 20px;
+}
+
+}
+
+
+p {
+
+color: #1c1c30;
+text-align: justify;
+max-width: 300px;
+font-size: 12px;
+font-weight: normal;
+margin: 0px 20px;
+
+
+}
+
+
+.titreDate {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+align-self: flex-start;
+
+h2 {
+
+font-size: 20px;
+font-weight: 800    ;
+margin: 0px 20px;
+color : #1c1c30 ;
+}
+
+h6{
+font-weight: 600;
+font-size: 12px;
+color: gray;
+
+}
+
+
+}
+
+
+
+
+}
+
+
+.boxbox.act {
+
+.titreBox {
+
+    padding: 10px;
+    margin: 0px 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #cf3c17;
+border-radius: 10px;
+font-size: 12px;
+font-weight: 700;
+
+align-self: flex-start;
+}
+
+}
+
+
+.boxbox.ofr {
+
+    .titreBox {
+    
+        padding: 10px;
+        margin: 0px 20px;
+        margin-top: 20px;
+        color: #1c1c30;
+        background-color: #f7cb8f;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    
+    align-self: flex-start;
+    }
+    
+    }
+
+.boxbox.non {
+
+    .titreBox {
+    
+        padding: 10px;
+        margin: 0px 20px;
+        margin-top: 20px;
+        color: #1c1c30;
+        background-color: rgba(208, 208, 208, 0.606);
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    
+    align-self: flex-start;
+    }
+    
+    }
+
+
+}
+
+}
+
+
+
+.subscribe{
+margin: 80px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+background-image: url("../../Assets/Backgrounds/maskG.png");
+background-repeat: no-repeat;
+
+background-position: 0;
+background-size: cover; 
+
+box-shadow: 25px 23px 30px -46px rgba(0, 0, 0, 0.542) inset;
+-webkit-box-shadow: 25px 23px 30px -46px rgba(0, 0, 0, 0.512) inset;
+
+width: fit-content;
+height: fit-content;
+border-radius: 12px;
+border: 1px solid rgb(210, 210, 210);
+
+
+.emailInput{
+
+    color: #1c1c30 ;
+    text-align: start;
+    border:1px solid rgb(165, 165, 165);
+    width: 540px;
+    height: 42px;
+    margin: 10px 120px;
+border-radius: 10px;
+font-weight: 400;
+font-size: 14px
+
+}
+
+
+
+.emailButton {
+
+    width: 100px;
+    height: 40px;
+    border: none ;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+   margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #1c1c30;
+    &:hover {
+        border: 2px solid #1c1c30;
+        background-color: transparent;
+        color: #1c1c30;
+        font-weight: 500;
+      }
+}
+
+
+h2 {
+margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1c1c30;
+}
+h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+color: #1c1c30;
+font-weight: 600;
+
+}
+
+
+
+}
+ 
+    
+}

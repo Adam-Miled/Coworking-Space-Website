@@ -1,0 +1,59 @@
+
+
+.caro ,.carb {
+    width: 230px ;
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: white;
+border-radius: 10px;
+
+border: 1px solid #5757674a;
+-webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+box-shadow: 2px 4px 10px 1px rgba(128, 128, 128, 0.47) ;
+
+
+&:hover {
+
+    background-color: #F0C6BD;
+    border: 1px solid #F0C6BD;
+    cursor: pointer;
+
+
+}
+
+
+
+h5 {
+font-size: 24px;
+color: #1c1c30;
+font-weight: 700;
+
+
+}
+
+h6 {
+    margin-top: 5px;
+    color: #cf3c17;
+    font-size: 18px;
+margin-bottom: 15px;
+font-weight: 700;
+}
+
+h4 {
+    margin-top: 2px;
+    align-self: flex-start;
+font-size: 12px;
+font-weight: 500;
+
+}
+
+
+}
+
+.carb {
+  visibility: hidden;
+
+}

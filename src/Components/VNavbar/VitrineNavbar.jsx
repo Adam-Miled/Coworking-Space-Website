@@ -3,9 +3,9 @@ import "./VitrineNavbar.scss"
 import { Link } from 'react-router-dom'
 import log from "../../Assets/log.png"
 
-const VitrineNavbar = () => {
+const VitrineNavbar = ({titre}) => {
   return (
-    <div className='vitrineNavbar'>
+    <div className={'vitrineNavbar ' + titre}>
         <div className="left">
         <Link to="/" style={{textDecoration: "none"}}>
             <img src={log} alt="logo" />
@@ -13,9 +13,19 @@ const VitrineNavbar = () => {
         </div>
 
         <div className="center">
+
+        <Link to="/packs" style={{textDecoration: "none"}}>
              <h4>Services</h4>
+             </Link>
+
+             <Link to="/actualites" style={{textDecoration: "none"}}>
              <h5>Actualités</h5>
+             </Link>
+
+             <Link to="/about" style={{textDecoration: "none"}}>
              <h5>A propos</h5>
+</Link>
+
 
              <Link to="/contact" style={{textDecoration: "none"}}>
              <h5>Contact</h5>

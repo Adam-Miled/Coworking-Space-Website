@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <div className='footer'>
         
-        <div className="container">
+        <div className="contain">
 
     
 <div className="left">
@@ -82,9 +82,17 @@ const Footer = () => {
 <a href="https://www.facebook.com/ApollonAssociation" target="_blank">
 <FacebookIcon className='sns'/>
 </a>
+
+<a href="https://www.instagram.com/apollonassociation/" target="_blank">
+<LinkedInIcon className='sns'/>
+</a>
+
  <a href="https://www.instagram.com/apollonassociation/" target="_blank">
 <InstagramIcon className='sns'/>
 </a>
+
+
+
 
  <a href="https://www.youtube.com/c/ApollonAssociation" target="_blank">
 <YouTubeIcon className='snsp'/>

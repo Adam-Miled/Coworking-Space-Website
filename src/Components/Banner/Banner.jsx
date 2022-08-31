@@ -1,10 +1,12 @@
 import React from 'react'
 import "./Banner.scss"
-
+ 
 
 const Banner = ({titre}) => {
   return (
-    <div className='banner'>
+
+
+    <div className={'banner ' + titre }>
         
 <div className="container">
     
@@ -24,7 +26,10 @@ const Banner = ({titre}) => {
     </div>
 
 
+
+
     </div>
+    
   )
 }
 
