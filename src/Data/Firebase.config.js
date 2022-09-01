@@ -6,7 +6,7 @@ let auth ;
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA5OHMDHcOqjTXLv0AIor6gSxrP7pCRpgY" ,
+  apiKey: "AIzaSyA5OHMDHcOqjTXLv0AIor6gSxrP7pCRpgY" , 
   authDomain: "dashboard-4b944.firebaseapp.com",
   projectId: "dashboard-4b944",
   storageBucket: "dashboard-4b944.appspot.com",

@@ -13,9 +13,14 @@ import fdf from "../../Assets/Logos/fond.png"
 import prod from "../../Assets/Logos/prodart.png"
 import Caro from '../../Components/Caro/Caro';
 
+console.log(process.env.FB_KEY) ;
+
 const Vitrine = () => {
   return (
     <div className='vitrine'>
+
+
+
 
 <div className="bg">
 <VitrineNavbar titre={'home'}/>
@@ -152,8 +157,9 @@ eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
 voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
 </p>
 
+<a href="error">
 <button>Réserver votre place !</button>
-
+</a>
 
 
 </div>
@@ -187,7 +193,7 @@ sed diam nonumy eirmod tempor invidunt ut labore et
 dolore magna aliquyam erat, sed diam voluptua. At 
 vero eos et accusam et justo duo dolores et ea rebum.</p>
 
-<button >Decouvrir</button>
+<button > Decouvrir</button>
 
 
 
@@ -232,170 +238,7 @@ vero eos et accusam et justo duo dolores et ea rebum.</p>
 </h2>
 
 
-
-<div className="serve">
-
-
-<div className="etudiant">
-
-<h1>Les packs ETUDIANT</h1>
-<div className="rowing">
-
-
-<div className="caro">
-
-<h5>Individuel / 7jours
-</h5>
-<h6>7.0 Dinar
-</h6>
-
-<h4>- Une salle</h4>
-<h4>- Acces internet </h4>
-
-</div>
-<div className="caro">
-
-<h5>Groupe / 7jours
-
-</h5>
-<h6>5.0 Dinar/Per
-</h6>
-
-<h4>- Une salle</h4>
-<h4>- Acces internet </h4>
-
-</div>
-
-
-</div>
-
-<div className="rowing">
-
-
-<div className="caro">
-
-<h5>Individuel / 1mois
-</h5>
-<h6>21.0 Dinar
-</h6>
-
-<h4>- Une salle</h4>
-<h4>- Acces internet </h4>
-
-</div>
-<div className="caro">
-
-<h5>Groupe / 1mois
-</h5>
-<h6>18.0 Dinar/Per
-</h6>
-
-<h4>- Une salle</h4>
-<h4>- Acces internet </h4>
-
-</div>
-
-
-</div>
-<div className="rowing">
-
-
-<div className="caro">
-
-<h5>Individuel / 3mois
-</h5>
-<h6>57.0 Dinar
-</h6>
-
-<h4>- Une salle</h4>
-<h4>- Acces internet </h4>
-<h4>- Access imprimerie</h4>
-
-</div>
-
-<div className="caro">
-
-<h5>Groupe / 3mois
-</h5>
-<h6>52.0 Dinar/Per
-</h6>
-
-<h4>- Une salle</h4>
-<h4>- Acces internet </h4>
-<h4>- Access imprimerie</h4>
-
-</div>
-
-</div>
-
-</div>
-
-
-<div className="ln">
-
-</div>
-
-<div className="entreprise">
-<h1>Les packs ENTREPRISES</h1>
-
-<div className="rowing">
-
-<Caro/>
-
-
-<div className="caro">
-
-<h5>1 Mois
-</h5>
-<h6>70.0 Dinar
-</h6>
-
-<h4>- Une salle</h4>
-<h4>- Acces internet </h4>
-<h4>- Access imprimerie</h4>
-<h4>- Zone libre</h4>
-
-</div>
-
-
-</div>
-
-<div className="rowing">
-
-<div className="carb">
-
-<h5>3 Mois
-</h5>
-<h6>190.0 Dinar
-</h6>
-
-<h4>- Une salle</h4>
-<h4>- Acces internet </h4>
-<h4>- Access imprimerie</h4>
-<h4>- Buffet de matin </h4>
-</div>
-
-<div className="caro">
-
-<h5>3 Mois
-</h5>
-<h6>190.0 Dinar
-</h6>
-
-<h4>- Une salle</h4>
-<h4>- Acces internet </h4>
-<h4>- Access imprimerie</h4>
-<h4>- Buffet de matin </h4>
-</div>
-
-</div>
-
-
-
-</div>
-
-
-</div>
+<Caro titre="vitrine" />
 
 <h2>Découvrir qu'est ce qu'il y a de nouveau</h2>
 

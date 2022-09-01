@@ -2,8 +2,8 @@ import React from 'react'
 import Banner from '../../Components/Banner/Banner'
 import VitrineNavbar from '../../Components/VNavbar/VitrineNavbar'
 import "./Apropos.scss"
-import logoap from "../../Assets/Logos/logoap.png"
-import logofd from "../../Assets/Logos/logofd.png"
+import logoap from "../../Assets/Logos/apollon.png"
+import logofd from "../../Assets/Logos/fond.png"
 import PlayCircleFilledWhiteIcon from '@mui/icons-material/PlayCircleFilledWhite';
 import gro from "../../Assets/Content/Gro.png"
 import Footer from "../../Components/Footer/Footer"
@@ -43,7 +43,7 @@ magna aliquyam erat, sed diam voluptua. </p>
 
 <div className="imgs">
 
-<img src={logoap} alt="Logo Association Apollon" />
+<img className='apo' src={logoap} alt="Logo Association Apollon" />
 <img src={logofd} alt="Logo Fondation de France" />
 
 

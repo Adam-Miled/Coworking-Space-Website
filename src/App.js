@@ -11,6 +11,7 @@ import Contact from "./Pages/Contact/Contact";
 import Apropos from "./Pages/Apropos/Apropos";
 import Actualites from "./Pages/Actualites/Actualites";
 import Services from "./Pages/Services/Services";
+import Errorpage from "./Pages/ErrorPage/Errorpage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/">
             <Route index element={<Vitrine />} />
             <Route path="login" element={<Login />} />
+            <Route path="*" element={<Errorpage />} />
             <Route path="home" element={<Home />} />
             <Route path="signup" element={<Signup />} />
             <Route path="contact" element={<Contact />} />

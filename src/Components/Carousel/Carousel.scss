@@ -1,0 +1,65 @@
+.carousel {
+margin: 0px 80px;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .image{
+
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    
+    
+    }
+
+    .leftArrow {
+        position: absolute;
+        top: 40%;
+        left: 12px;
+        font-size: 3rem;
+        color: white;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+stroke:   #1c1c30;
+
+            }
+
+    .rightArrow {
+position: absolute;
+top: 40%;
+right: 12px;
+font-size: 3rem;
+color: white;
+
+stroke:   #1c1c30;
+z-index: 10;
+cursor: pointer;
+user-select: none;
+    }
+
+
+.slide {
+
+    opacity: 0;
+    transition-duration: 1s ease;
+
+}
+
+.slide.active {
+
+opacity: 1;
+transition-duration: 0.8s;
+transform: scale(1.08);
+
+}
+
+
+}
+
+

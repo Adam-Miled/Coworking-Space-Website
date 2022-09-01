@@ -6,12 +6,19 @@ import SmokingRoomsIcon from '@mui/icons-material/SmokingRooms';
 import FastfoodIcon from '@mui/icons-material/Fastfood';  
 import LocalPrintshopIcon from '@mui/icons-material/LocalPrintshop';
 import BorderColorIcon from '@mui/icons-material/BorderColor';
+import Carousel from '../../Components/Carousel/Carousel';
+import { CarouselData } from '../../Data/CarouselData.';
+import Banner from '../../Components/Banner/Banner';
+
 
 const Services = () => {
   return (
     <div className='service'>
-      
+
+     
 <VitrineNavbar/>
+
+<Banner titre="Services"/>
 
 <div className="zone">
   
@@ -19,6 +26,247 @@ const Services = () => {
 
 <h4>Lorem Ipvacib ciev fvf jpka aklceç ckrtngbpis ofin, cvro, cipd ckfnvofv,f
 vfinvfo,vofva okla foklv facy.</h4>
+
+
+</div>
+
+<div className="discriptif">
+
+<div className="tLeft">
+
+<h4>Espace Collectif
+</h4>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+sed diam nonumy eirmod tempor invidunt ut labore et
+dolore magna aliquyam erat, sed diam voluptua. At vero
+eos et accusam et justo duo dolores et ea rebum. Stet
+clita kasd gubergren, no sea takimata sanctus est
+Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+consetetur sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam  </p>
+
+</div>
+
+
+<Carousel slides={CarouselData} />
+
+
+
+
+
+</div>
+
+<div className="serviceBoxRow">
+
+<div className="serviceBox">
+
+<div className="caroBox">
+
+<h5>Groupe / 3mois
+
+</h5>
+<h6>52.0 Dinar/Per
+</h6>
+
+<h4>- Une salle</h4>
+<h4>- Acces internet </h4>
+<h4>- Access imprimerie</h4>
+
+</div>
+<div className="caroBox">
+
+<h5>Groupe / 3mois
+
+</h5>
+<h6>52.0 Dinar/Per
+</h6>
+
+<h4>- Une salle</h4>
+<h4>- Acces internet </h4>
+<h4>- Access imprimerie</h4>
+
+</div>
+
+
+<div className="caroBoxUlt">
+
+<h5>Groupe / 3mois
+
+</h5>
+<h6>52.0 Dinar/Per
+</h6>
+
+<h4>- Une salle</h4>
+<h4>- Acces internet </h4>
+<h4>- Access imprimerie</h4>
+
+</div>
+</div>
+
+<div className="serviceBox">
+
+<div className="caroBox">
+<h5>Groupe / 3mois
+
+</h5>
+<h6>52.0 Dinar/Per
+</h6>
+
+<h4>- Une salle</h4>
+<h4>- Acces internet </h4>
+<h4>- Access imprimerie</h4>
+
+</div>
+<div className="caroBoxUlt">
+
+<h5>Groupe / 3mois
+
+</h5>
+<h6>52.0 Dinar/Per
+</h6>
+
+<h4>- Une salle</h4>
+<h4>- Acces internet </h4>
+<h4>- Access imprimerie</h4>
+
+</div>
+
+
+<div className="caroBox">
+
+<h5>Groupe / 3mois
+
+</h5>
+<h6>52.0 Dinar/Per
+</h6>
+
+<h4>- Une salle</h4>
+<h4>- Acces internet </h4>
+<h4>- Access imprimerie</h4>
+
+</div>
+</div>
+
+</div>
+
+
+
+<div className="discriptif">
+
+
+<Carousel slides={CarouselData} />
+
+
+<div className="tLeft">
+
+<h4>Espace Groupe
+</h4>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+sed diam nonumy eirmod tempor invidunt ut labore et
+dolore magna aliquyam erat, sed diam voluptua. At vero
+eos et accusam et justo duo dolores et ea rebum. Stet
+clita kasd gubergren, no sea takimata sanctus est
+Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+consetetur sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam  </p>
+
+</div>
+
+
+</div>
+
+
+
+<div className="serviceBoxRow">
+
+<div className="serviceBox">
+
+<div className="caroBox">
+
+<h5>Groupe / 3mois
+
+</h5>
+<h6>52.0 Dinar/Per
+</h6>
+
+<h4>- Une salle</h4>
+<h4>- Acces internet </h4>
+<h4>- Access imprimerie</h4>
+
+</div>
+<div className="caroBoxUlt">
+
+<h5>Groupe / 3mois
+
+</h5>
+<h6>52.0 Dinar/Per
+</h6>
+
+<h4>- Une salle</h4>
+<h4>- Acces internet </h4>
+<h4>- Access imprimerie</h4>
+
+</div>
+
+
+<div className="caroBox">
+
+<h5>Groupe / 3mois
+
+</h5>
+<h6>52.0 Dinar/Per
+</h6>
+
+<h4>- Une salle</h4>
+<h4>- Acces internet </h4>
+<h4>- Access imprimerie</h4>
+
+</div>
+</div>
+
+<div className="serviceBox">
+
+<div className="caroBox">
+<h5>Groupe / 3mois
+
+</h5>
+<h6>52.0 Dinar/Per
+</h6>
+
+<h4>- Une salle</h4>
+<h4>- Acces internet </h4>
+<h4>- Access imprimerie</h4>
+
+</div>
+<div className="caroBox">
+
+<h5>Groupe / 3mois
+
+</h5>
+<h6>52.0 Dinar/Per
+</h6>
+
+<h4>- Une salle</h4>
+<h4>- Acces internet </h4>
+<h4>- Access imprimerie</h4>
+
+</div>
+
+
+<div className="caroBoxUlt">
+
+<h5>Groupe / 3mois
+
+</h5>
+<h6>52.0 Dinar/Per
+</h6>
+
+<h4>- Une salle</h4>
+<h4>- Acces internet </h4>
+<h4>- Access imprimerie</h4>
+
+</div>
+</div>
 
 </div>
 
@@ -36,6 +284,79 @@ vfinvfo,vofva okla foklv facy.</h4>
 <h4>Lorem Ipvacib ciev fvf jpka aklceç ckrtngbpis ofin, cvro, cipd ckfnvofv,f
 vfinvfo,vofva okla foklv facy.</h4>
 
+
+</div>
+
+<div className="discriptif">
+
+<div className="tLeft">
+
+<h4>Espace Entrepreneur
+</h4>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+sed diam nonumy eirmod tempor invidunt ut labore et
+dolore magna aliquyam erat, sed diam voluptua. At vero
+eos et accusam et justo duo dolores et ea rebum. Stet
+clita kasd gubergren, no sea takimata sanctus est
+Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+consetetur sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam  </p>
+
+</div>
+
+
+<Carousel slides={CarouselData} />
+
+
+</div>
+
+<div className="serviceBoxRow">
+<div className="serviceBox">
+
+<div className="caroBox">
+
+<h5>Groupe / 3mois
+
+</h5>
+<h6>52.0 Dinar/Per
+</h6>
+
+<h4>- Une salle</h4>
+<h4>- Acces internet </h4>
+<h4>- Access imprimerie</h4>
+
+</div>
+<div className="caroBox">
+
+<h5>Groupe / 3mois
+
+</h5>
+<h6>52.0 Dinar/Per
+</h6>
+
+<h4>- Une salle</h4>
+<h4>- Acces internet </h4>
+<h4>- Access imprimerie</h4>
+
+<h4>- Zone libre</h4>
+</div>
+
+
+<div className="caroBox">
+<h5>Groupe / 3mois
+
+</h5>
+<h6>70.0 Dinar/Per
+</h6>
+<h4>- Une salle</h4>
+<h4>- Acces internet </h4>
+<h4>- Access imprimerie</h4>
+
+<h4>- Zone libre</h4>
+<h4>- Buffet de matin </h4>
+
+</div>
+</div>
 </div>
 
 

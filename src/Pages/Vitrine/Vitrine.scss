@@ -269,78 +269,6 @@ color: #cf3c17;
     }
 
 
-.serve{
-
-  
-
-    background-image: url("../../Assets/Content/dark.png");
-    background-repeat: no-repeat;
-    height: fit-content ;
-background-position: 0;
-background-size: cover; 
-width: 100%;
-
-display: flex;
-flex-direction: row;
-justify-content: center;
-
-
-gap: 80px;
-
-.ln {
-    width: 2px;
-    height: 712px    ;
-    background-color: #cf3c17;
-  }
-
-
-.etudiant , .entreprise {
-
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-
-width: fit-content;
-height: fit-content;
-
-margin-bottom: 60px;
-
-
-
-
-.rowing {
-margin-bottom: 20px;
-display: flex;
-align-items: flex-start;
-justify-content: center;
-gap: 20px;
-
-
-
-
-
-
-}
-
-
-
-h1{
-color: #1c1c30;
-font-weight: bold;
-font-size: 22px;
-}
-
-
-
-}
-
-
-
-
-
-
-}
 
 
 
@@ -393,6 +321,16 @@ border-radius: 10px;
 width: 150px;
 height: 50px;
 padding: 20px;
+
+&:hover {
+ cursor: pointer;
+ background-color: #f7cc8f;
+ color: #1c1c30;
+
+}
+
+
+
 
 
 }
@@ -510,6 +448,11 @@ align-items: center;
 margin: 20px;
 
 
+a {
+    text-decoration: none;
+}
+
+
 button {
     margin: 30px;
 display: flex;
@@ -525,6 +468,14 @@ width: 230px;
 
 font-size: 16px;
 font-weight: bold;
+cursor: pointer;
+
+&:hover {
+    color: #f7cb8f;
+    background-color: #1c1c30;
+
+}
+
 
 }
 
