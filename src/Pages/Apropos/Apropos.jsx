@@ -18,10 +18,20 @@ import apollon from "../../Assets/Logos/apollon.png"
 import fond from "../../Assets/Logos/fond.png"
 import Faq from '../../Components/Faq/Faq'
 import fa from "../../Assets/Content/fa.png"
-
+import { useNavigate } from 'react-router-dom'
 
 
 const Apropos = () => {
+
+  const navigate = useNavigate();
+
+
+  const handleCli = () => {
+    navigate('/signup');
+    window.scrollTo(0, 0);
+
+  };
+
   return (
     <div className='apropos'>
         <VitrineNavbar/>
@@ -42,22 +52,24 @@ sed diam nonumy eirmod tempor invidunt ut labore et dolore
 magna aliquyam erat, sed diam voluptua. </p>
 
 <div className="imgs">
-
+<a href="https://www.apollon.org.tn/" target="_blank">
 <img className='apo' src={logoap} alt="Logo Association Apollon" />
+</a>
+<a href="https://www.fondationdefrance.org/" target="_blank">
 <img src={logofd} alt="Logo Fondation de France" />
-
+</a>
 
 
 </div>
 
-
+<a href="https://www.youtube.com/watch?v=dQsyfYGxGMk" target="_blank" >
 <div className="vid">
 
 <PlayCircleFilledWhiteIcon className='ico'/>
 <h3>Regarder La video</h3>
 
 </div>
-
+</a>
 
 </div>
 
@@ -255,7 +267,7 @@ erat, sed diam voluptua. At vero eos et accusam et justo duo
 <h6>rejoignez-nous maintenant et commencez à élargir votre reseau
 et à améliorer vos compétences.</h6>
 
-<button>Inscrivez-vous</button>
+<button onClick={handleCli}>Inscrivez-vous</button>
 
 </div>
 

@@ -10,9 +10,13 @@ import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import LocalPoliceIcon from '@mui/icons-material/LocalPolice';
 import Footer from '../../Components/Footer/Footer'
-
+import map from "../../Assets/Content/map.png"
 
 const Contact = () => {
+
+
+
+
   return (
     <div className='contact'>
 <VitrineNavbar/>  
@@ -85,7 +89,11 @@ const Contact = () => {
 </div>
 
 </div>
-<div className="mapImg"></div>
+<div className="mapImg">
+
+<img src={map} alt="Direction vers Locale Thakafi" />
+
+</div>
 
 </div>
 

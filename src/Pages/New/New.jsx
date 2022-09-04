@@ -4,11 +4,26 @@ import Navbar from '../../Components/Navbar/Navbar';
 import "./New.scss" ;
 import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
 import { useState } from 'react';
-
+import { addDoc , collection, doc, serverTimestamp, setDoc, Timestamp } from "firebase/firestore";
+import {db} from '../../Data/Firebase'
 const New = ({inputs , titre}) => {
 
 const [file , setFile] = useState("") ; 
  
+const handleAdd = async(e) => {
+
+e.preventDefault() 
+const res = await addDoc(collection(db, "cities"), {
+  name: "Los Angeles",
+  state: "CA",
+  country: "USA" ,
+  timeStamp : serverTimestamp()  
+});
+
+console.log(res.id);
+
+}
+
 
 
 
@@ -39,7 +54,7 @@ const [file , setFile] = useState("") ;
 </div>
 <div className="right">
   
-<form>
+<form onSubmit={handleAdd}>
 
 <div className="formInput">
 
@@ -76,7 +91,7 @@ const [file , setFile] = useState("") ;
 
 
 
-<button type="">Confirmer</button>
+<button type="submit"  >Confirmer</button>
 
 
 </form>

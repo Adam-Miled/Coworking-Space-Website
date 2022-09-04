@@ -12,10 +12,23 @@ import apollon from "../../Assets/Logos/apollon.png"
 import fdf from "../../Assets/Logos/fond.png"
 import prod from "../../Assets/Logos/prodart.png"
 import Caro from '../../Components/Caro/Caro';
-
-console.log(process.env.FB_KEY) ;
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 const Vitrine = () => {
+
+  const navigate = useNavigate();
+
+
+  const navigateProps = () => {
+   
+    navigate('/about');
+    window.scrollTo(0, 0);
+  };
+
+
+
+
+
   return (
     <div className='vitrine'>
 
@@ -42,6 +55,7 @@ diamvoluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet</p>
 <a href="https://www.instagram.com/apollonassociation/" target="_blank">
 <LinkedInIcon className='sns'/>
 </a>
+
 
  <a href="https://www.instagram.com/apollonassociation/" target="_blank">
 <InstagramIcon className='sns'/>
@@ -193,38 +207,40 @@ sed diam nonumy eirmod tempor invidunt ut labore et
 dolore magna aliquyam erat, sed diam voluptua. At 
 vero eos et accusam et justo duo dolores et ea rebum.</p>
 
+<a href="/packs" t>
 <button > Decouvrir</button>
-
-
-
-</div>
-
-<div className="espace">
-
-<h3>Espace Commun</h3>
-
-<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-sed diam nonumy eirmod tempor invidunt ut labore et 
-dolore magna aliquyam erat, sed diam voluptua. At 
-vero eos et accusam et justo duo dolores et ea rebum.</p>
-
-<button >Decouvrir</button>
-
+</a>
 
 
 </div>
 
 <div className="espace">
 
-<h3>Espace Commun</h3>
+<h3>Espace Groupe</h3>
+
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+sed diam nonumy eirmod tempor invidunt ut labore et 
+dolore magna aliquyam erat, sed diam voluptua. At 
+vero eos et accusam et justo duo dolores et ea rebum.</p>
+<a href="">
+<button >Decouvrir</button>
+
+</a>
+
+</div>
+
+<div className="espace">
+
+<h3>Espace Entrepreneur</h3>
 
 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
 sed diam nonumy eirmod tempor invidunt ut labore et 
 dolore magna aliquyam erat, sed diam voluptua. At 
 vero eos et accusam et justo duo dolores et ea rebum.</p>
 
+<a href="/packs">
 <button >Decouvrir</button>
-
+</a>
 
 
 </div>
@@ -307,7 +323,7 @@ plom.
 
 </p>
 
-<button>Lire plus</button>
+<button onClick={navigateProps}>Lire plus</button>
 
 </div>
 

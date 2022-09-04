@@ -32,9 +32,9 @@ vfinvfo,vofva okla foklv facy.</h4>
 
 <div className="discriptif">
 
-<div className="tLeft">
+<div id='EA' className="tLeft">
 
-<h4>Espace Collectif
+<h4  >Espace Collectif
 </h4>
 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
 sed diam nonumy eirmod tempor invidunt ut labore et
@@ -157,9 +157,9 @@ tempor invidunt ut labore et dolore magna aliquyam  </p>
 <Carousel slides={CarouselData} />
 
 
-<div className="tLeft">
+<div className="tLeft" id='EB'>
 
-<h4>Espace Groupe
+<h4 >Espace Groupe
 </h4>
 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
 sed diam nonumy eirmod tempor invidunt ut labore et
@@ -289,9 +289,9 @@ vfinvfo,vofva okla foklv facy.</h4>
 
 <div className="discriptif">
 
-<div className="tLeft">
+<div className="tLeft" id='EC'>
 
-<h4>Espace Entrepreneur
+<h4 >Espace Entrepreneur
 </h4>
 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
 sed diam nonumy eirmod tempor invidunt ut labore et

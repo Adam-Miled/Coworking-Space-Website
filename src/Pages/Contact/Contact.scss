@@ -132,13 +132,10 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-   background-image: url("../../Assets/Content/map.png");
-    background-repeat: no-repeat;
+  
     border-radius: 10px;
     border: 1px solid #1c1c3028;
 
-background-position: 0;
-background-size: cover; 
 width: 450px;
 height: 200px;
 }

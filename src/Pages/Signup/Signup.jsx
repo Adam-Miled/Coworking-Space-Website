@@ -4,7 +4,7 @@ import log from "../../Assets/log.png"
 import KeyboardIcon from '@mui/icons-material/Keyboard';
 import { Link } from "react-router-dom"
 import {createUserWithEmailAndPassword } from "firebase/auth";
-import auth from "../../Data/Firebase.config"
+import auth from "../../Data/Firebase"
 import { useNavigate } from 'react-router-dom';
 
 

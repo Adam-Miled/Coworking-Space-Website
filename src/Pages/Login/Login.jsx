@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Login.scss'
 import {signInWithEmailAndPassword } from "firebase/auth";
-import auth from "../../Data/Firebase.config"
+import auth from "../../Data/Firebase"
 import { useNavigate } from 'react-router-dom';
 import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import log from "../../Assets/log.png"
 import { Link } from "react-router-dom"
+import {AuthContext} from '../../Context/AuthContext'
+
+
+
 
 const Login = () => {
 
@@ -17,6 +21,9 @@ const [password, setPassword] = useState("") ;
 const navigate =useNavigate()
 
 
+const {dispatch} = useContext(AuthContext)
+
+
 const handleLogin = (e) => {
 
 e.preventDefault() ; 
@@ -25,7 +32,8 @@ signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-    navigate("/")
+    dispatch({type:"LOGIN" , payload:user})
+    navigate("/home")
     // ...
   })
   .catch((error) => {
