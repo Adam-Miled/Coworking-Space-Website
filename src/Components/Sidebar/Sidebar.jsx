@@ -28,7 +28,9 @@ const Sidebar = () => {
 
           <li>
             <DashboardIcon className="icon"  />
+            <a href="/home">
             <span>Tableau de bord</span>
+            </a>
           </li>
           <p className="title"> VISIONNAIRE</p>
 

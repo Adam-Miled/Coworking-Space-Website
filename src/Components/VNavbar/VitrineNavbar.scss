@@ -73,18 +73,32 @@ flex-direction: row;
 justify-content: space-around;
 
 
+a.active {
+    h5, h4 {
+color: #cf3c17;
+
+    }
+
+
+    }
+
+
+
 h4{
     margin: 0px 20px;
     font-size: 16px;
     font-weight: 600;
-    color: #cf3c17;
+    color: #1c1c30;
 cursor: pointer;
     &:hover {
-color: #1c1c30;
+color: #cf3c17;
 
     }
     
 }
+
+
+
 
 h5{
 margin: 0px 20px;
@@ -99,6 +113,8 @@ color: #cf3c17;
     }
 
 }
+
+
 
 
 }
@@ -186,11 +202,12 @@ h4{
     font-size: 16px;
     font-weight: 600;
     color: #cf3c17;
+    background-color: rgba(240, 248, 255, 0.419);
+border-radius: 10px;
 cursor: pointer;
     &:hover {
 color: #1c1c30;
-background-color: rgba(240, 248, 255, 0.419);
-border-radius: 10px;
+
 
     }
     

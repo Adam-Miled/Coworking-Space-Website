@@ -25,8 +25,39 @@ const Vitrine = () => {
     window.scrollTo(0, 0);
   };
 
+  const ActHandler = () => {
+   
+    navigate('/actualites');
+    window.scrollTo(0, 500);
+  };
+
+  const OfrHandler = () => {
+   
+    navigate('/actualites');
+    window.scrollTo(0, 500);
+  };
+
+const FlowPackCom = () => {
+  navigate('/packs');
+
+  window.scrollTo(0, 400);
+
+};
 
 
+const FlowPackGrp = () => {
+  navigate('/packs');
+
+  window.scrollTo(0, 1350);
+
+};
+
+const FlowPackEnt = () => {
+  navigate('/packs');
+
+  window.scrollTo(0, 2430);
+
+};
 
 
   return (
@@ -171,7 +202,7 @@ eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
 voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
 </p>
 
-<a href="error">
+<a href="coming">
 <button>Réserver votre place !</button>
 </a>
 
@@ -207,9 +238,8 @@ sed diam nonumy eirmod tempor invidunt ut labore et
 dolore magna aliquyam erat, sed diam voluptua. At 
 vero eos et accusam et justo duo dolores et ea rebum.</p>
 
-<a href="/packs" t>
-<button > Decouvrir</button>
-</a>
+<button onClick={FlowPackCom} > Decouvrir</button>
+
 
 
 </div>
@@ -222,10 +252,9 @@ vero eos et accusam et justo duo dolores et ea rebum.</p>
 sed diam nonumy eirmod tempor invidunt ut labore et 
 dolore magna aliquyam erat, sed diam voluptua. At 
 vero eos et accusam et justo duo dolores et ea rebum.</p>
-<a href="">
-<button >Decouvrir</button>
 
-</a>
+<button onClick={FlowPackGrp}  >Decouvrir</button>
+
 
 </div>
 
@@ -238,9 +267,9 @@ sed diam nonumy eirmod tempor invidunt ut labore et
 dolore magna aliquyam erat, sed diam voluptua. At 
 vero eos et accusam et justo duo dolores et ea rebum.</p>
 
-<a href="/packs">
-<button >Decouvrir</button>
-</a>
+
+<button onClick={FlowPackEnt}>Decouvrir</button>
+
 
 
 </div>
@@ -275,8 +304,8 @@ vero eos et accusam et justo duo dolores et ea rebum.</p>
 <button className='rR'>Explorer</button>
 
 </div>
-
-<button className='low'>Plus d'actualités</button>
+ 
+<button className='low'onClick={ActHandler} >Plus d'actualités</button>
 
 </div>
 
@@ -298,7 +327,7 @@ vero eos et accusam et justo duo dolores et ea rebum.</p>
 
 </div>
 
-<button className='low'>Plus d'offres</button>
+<button className='low' onClick={OfrHandler}>Plus d'offres</button>
 </div>
 
 </div>

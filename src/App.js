@@ -14,6 +14,7 @@ import Services from "./Pages/Services/Services";
 import Errorpage from "./Pages/ErrorPage/Errorpage";
 import { AuthContext } from "./Context/AuthContext";
 import { useContext } from "react";
+import Coming from "./Pages/ComingSoon/Coming";
 
 
 function App() {
@@ -30,7 +31,8 @@ return currentUser ? (children) : <Navigate to="/login"/> ;
 
 }; 
 
-console.log( currentUser);
+
+
 
 
   return (
@@ -40,6 +42,7 @@ console.log( currentUser);
           <Route path="/">
             <Route index element={<Vitrine />} />
             <Route path="login" element={<Login />} />
+            <Route path="coming" element={ <Coming/> } />
             <Route path="*" element={<Errorpage />} />
             <Route path="home" element={
             <RequireAuth>
@@ -54,7 +57,7 @@ console.log( currentUser);
             <Route path="packs" element={ 
               <Services />
             } />
-            <Route path="about" element={<Apropos />} />
+            <Route path="about" element={<Apropos />}  />
             <Route path="actualites" element={<Actualites />} />
             <Route path="users">
               <Route index element={<RequireAuth> 
