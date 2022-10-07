@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import './Login.scss'
 import {signInWithEmailAndPassword } from "firebase/auth";
-import auth from "../../Data/Firebase"
+import {auth} from "../../Data/Firebase"
 import { useNavigate } from 'react-router-dom';
 import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import log from "../../Assets/log.png"

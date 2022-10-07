@@ -107,7 +107,19 @@ color: white;
 cursor: pointer;
 margin-top: 10px;
 margin-bottom: 10px;
+
+
+
+
+
+&:disabled {
+    background-color: #1c1c307f;
+    cursor: not-allowed;
 }
+
+}
+
+
 
 
 }

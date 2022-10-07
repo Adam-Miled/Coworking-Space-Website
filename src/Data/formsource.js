@@ -1,48 +1,48 @@
 export const userInputs = [
   {
-    id: 1,
+    id: "username",
     label: "Nom d'utilisateur",
     type: "text",
     placeholder: "Nom et Prénom",
   },
 
   {
-    id: 2,
+    id: "numcin",
     label: "Num CIN",
     type: "text",
     placeholder: "CIN",
   },
 
   {
-    id: 3,
+    id: "useremail",
     label: "Email",
     type: "text",
     placeholder: "Adresse mail",
   },
 
   {
-    id: 4,
+    id: "userphone",
     label: "Num Télephone",
     type: "text",
     placeholder: "+216 --",
   },
 
   {
-    id: 5,
+    id: "useradresse",
     label: "Adresse",
     type: "text",
     placeholder: "Rue de ...",
   },
 
   {
-    id: 6,
+    id: "servicechoice",
     label: "Service",
     type: "text",
     placeholder: "Choisir le service...",
   },
 
   {
-    id: 7,
+    id: "finalstate",
     label: "Etat",
     type: "text",
     placeholder: "Non Payé",
