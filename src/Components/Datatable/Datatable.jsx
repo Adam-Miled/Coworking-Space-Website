@@ -1,14 +1,52 @@
-import React from 'react'
+import React, { useState , useEffect } from 'react'
 import "./Datatable.scss"
 import {userColumns , userRows} from "../../Data/datatablesource" ; 
 import {Link} from "react-router-dom"
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
+import {auth , db} from '../../Data/Firebase'
+import { collection, getDocs , deleteDoc , doc} from "firebase/firestore";
 
 
 
 
 const Datatable = () => {
 
+  const [data, setData] = useState([]) ; 
+
+useEffect(() => {
+  const fetchData = async () => {
+    let list =[] ;
+try {
+    const querySnapshot = await getDocs(collection(db, "clients"));
+    querySnapshot.forEach((doc) => {
+      list.push({id: doc.id, ...doc.data()}) ; 
+    });
+    console.log(list);
+    setData(list) ;
+  } catch(err) {
+    console.log(err)
+  }
+
+  };
+    fetchData() ;
+}, [])
+
+
+
+  const handleDelete = (id) => {
+console.log(id);
+    try{
+deleteDoc(doc(db, "clients", id));
+
+      setData(data.filter((item)=> item.id!==id)) ;
+    }
+    catch(err) {
+      console.log(err)
+    }
+; 
+
+  };
+  
 
 const actionColumn = [
 {
@@ -22,9 +60,10 @@ return (
 
 </div>
 </Link>
-<div className='deleteButton'>
+<div className='deleteButton' >
+  <button onClick={handleDelete}>
   Delete
-
+  </button>
 </div>
 
 </div>
@@ -47,7 +86,7 @@ return (
       </Link>
       </div>
         <DataGrid
-        rows={userRows}
+        rows={data}
         columns={userColumns.concat(actionColumn)}
         pageSize={9}
         rowsPerPageOptions={[9]}

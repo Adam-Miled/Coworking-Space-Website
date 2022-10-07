@@ -8,6 +8,7 @@ import { addDoc , collection, doc, serverTimestamp, setDoc, Timestamp } from "fi
 import {auth , storage , db} from '../../Data/Firebase'
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import {  ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import { useNavigate } from 'react-router-dom';
 
 
 const New = ({inputs , titre}) => {
@@ -15,6 +16,9 @@ const New = ({inputs , titre}) => {
 const [file , setFile] = useState("") ; 
 const [data, setData] = useState({}) ; 
 const [per, setPer] = useState(null);
+
+const navigate = useNavigate() ; 
+
 
 useEffect(() =>{
 
@@ -85,6 +89,9 @@ await setDoc(doc(db, "clients", res.user.uid ), {
   ...data,
   timeStamp : serverTimestamp()  ,
 });
+
+navigate(-1) ;
+
 }
 catch (err) {console.log(err)}
 

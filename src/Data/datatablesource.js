@@ -5,16 +5,17 @@ export const userColumns = [
 return (
 
     <div className="cellwithImg">
-        <img className="cellImg" src={params.row.img} alt="avatar"/>
+        <img className="cellImg" src={params.row.image} alt="avatar"/>
         {params.row.username}
          </div> 
 )
 
     } },
-    { field: 'email', headerName: 'Adresse Email', width: 400 },
-    { field: 'phone', headerName: 'Num Telephone', width: 200 },
-    {    field: 'cin', headerName: 'Num CIN', width: 150,  },
-
+    { field: 'useremail', headerName: 'Adresse Email', width: 400 },
+    { field: 'userphone', headerName: 'Num Telephone', width: 200 },
+    {    field: 'numcin', headerName: 'Num CIN', width: 150,  },
+    
+    {    field: 'finalstate', headerName: 'Etat', width: 150,  },
 
 ] ;
 
